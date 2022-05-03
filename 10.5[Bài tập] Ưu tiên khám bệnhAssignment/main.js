@@ -1,0 +1,18 @@
+"use strict";
+exports.__esModule = true;
+var Patient_1 = require("./Patient");
+var QueueData_1 = require("./QueueData");
+var PatientList = new QueueData_1.QueueData();
+var Smith = new Patient_1.Patient("Smith", 5);
+var Jones = new Patient_1.Patient("Jones", 4);
+var Fehrenbach = new Patient_1.Patient("Fehrenbach", 6);
+var Brown = new Patient_1.Patient("Brown", 1);
+var Ingram = new Patient_1.Patient("Ingram", 1);
+PatientList.addPatient(Smith);
+PatientList.addPatient(Jones);
+PatientList.addPatient(Fehrenbach);
+PatientList.addPatient(Brown);
+PatientList.addPatient(Ingram);
+PatientList.showPatientList();
+PatientList.checkOutForPatient();
+PatientList.showPatientList();
